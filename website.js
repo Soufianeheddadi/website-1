@@ -92,10 +92,10 @@ app.post("/", function (req, res) {
   });
 
   const jasonData = JSON.stringify(data);
-  const url = "https://us8.api.mailchimp.com/3.0/lists/1b2f70f74d";
+  const url = "https://us8.api.mailchimp.com/3.0/lists/xxxxx";
   const options = {
     method: "POST",
-    auth: "soufiane1:s4d4c261193a60c933328c256168c61d5-us8",
+    auth: "soufiane1:xxxxxxxxxxxxxxxx",
   };
   const request = https.request(url, options, function (response) {
     response.on("data", function (data) {
@@ -116,7 +116,4 @@ app.listen(process.env.PORT || 3000, function () {
   console.log("Server is running");
 });
 
-//API Key
-// 4d4c261193a60c933328c256168c61d5-us8
-//audience ID
-// 1b2f70f74d
+
