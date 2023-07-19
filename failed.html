@@ -1,0 +1,102 @@
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Failure</title>
+  </head>
+  <style>
+    :root {
+      --bg-color: #081b29;
+      --second-bg-color: #112e42;
+      --text-color: #ededed;
+      --main-color: #00abf0;
+    }
+    body {
+      text-align: center;
+      padding: 40px 0;
+      background: #ebf0f5;
+    }
+    h1 {
+      color: #ff3131;
+      font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+      font-weight: 900;
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+    p {
+      color: #404f5e;
+      font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+      font-size: 20px;
+      margin: 0;
+    }
+    i {
+      color: #ff3131;
+      font-size: 100px;
+      line-height: 200px;
+      margin-left: -15px;
+    }
+    .card {
+      background: white;
+      padding: 60px;
+      border-radius: 4px;
+      box-shadow: 0 2px 3px #c8d0d8;
+      display: inline-block;
+      margin: 0 auto;
+    }
+    .btn-box {
+      margin-top: 2rem;
+      width: 20rem;
+      height: 4rem;
+    }
+
+    .btn-box .btn {
+      justify-content: center;
+      align-items: center;
+      width: 9rem;
+      height: 100%;
+      background: var(--main-color);
+      border: 0.2rem solid var(--main-color);
+      border-radius: 0.8rem;
+      font-size: 1.3rem;
+      font-weight: 600;
+      letter-spacing: 0.1rem;
+      color: var(--bg-color);
+      z-index: 1;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .btn-box .btn:hover {
+      color: var(--main-color);
+    }
+  </style>
+  <body>
+    <div class="card">
+      <div
+        style="
+          border-radius: 200px;
+          height: 200px;
+          width: 200px;
+          background: #f8faf5;
+          margin: 0 auto;
+        "
+      >
+        <i class="checkmark">!</i>
+      </div>
+      <h1>Uh oh!</h1>
+      <p>
+        There was a problem signing you up;<br />
+        Please try again!
+      </p>
+      <form action="/failure" method="post">
+        <div class="btn-box btns">
+          <button type="submit" class="btn">Try again!</button>
+          <span class="animate scroll"></span>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
